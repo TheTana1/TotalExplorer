@@ -1,0 +1,60 @@
+﻿<Window x:Class="TotalExplorer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TotalExplorer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="689">
+
+    <Grid x:Name="g1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="281*"/>
+            <RowDefinition Height="36*"/>
+        </Grid.RowDefinitions>
+        <Menu  Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Files">
+                <MenuItem Header="Changes Attributes" ></MenuItem>
+                <MenuItem Header="Pack..." ></MenuItem>
+                <MenuItem Header="Unpack Specific Files..."></MenuItem>
+                <MenuItem Header="Test Archive(s)" ></MenuItem>
+                <MenuItem Header="Compare By Content..." ></MenuItem>
+                <MenuItem Header="Associate With..." ></MenuItem>
+                <MenuItem Header="Internal Associations..." ></MenuItem>
+                <MenuItem Header="Properties..." ></MenuItem>
+                <MenuItem Header="Calculate Occupied Space..." ></MenuItem>
+                <MenuItem Header="Multi-Reaname Tool..." ></MenuItem>
+                <MenuItem Header="Edit Comment..." ></MenuItem>
+                <MenuItem Header="Print" >
+                    <MenuItem Header="File list..."/>
+                    <MenuItem Header="File list with subdirs..."/>
+                    <MenuItem Header="File contents..."/>
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Split File..." ></MenuItem>
+                <MenuItem Header="Combine Files..." ></MenuItem>
+                <MenuItem Header="Encode File (MIME,UUE,XXE)..."></MenuItem>
+                <MenuItem Header="Encode File (MIME,UUE,XXE,BinHEX)..."></MenuItem>
+                <MenuItem Header="Create Checksum File(s) (CRC32,MD5,SHA1)..."></MenuItem>
+                <MenuItem Header="Verify Checksums (from checksum files)"></MenuItem>
+                <Separator />
+                <MenuItem Header="Quit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Mark" ></MenuItem>
+            <MenuItem Header="Commands" ></MenuItem>
+            <MenuItem Header="Net" ></MenuItem>
+            <MenuItem Header="Show" ></MenuItem>
+            <MenuItem Header="Configuration" ></MenuItem>
+            <MenuItem Header="Start" ></MenuItem>
+        </Menu>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+    </Grid>
+</Window>
