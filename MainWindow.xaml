@@ -14,41 +14,73 @@
             <RowDefinition Height="281*"/>
             <RowDefinition Height="36*"/>
         </Grid.RowDefinitions>
-        <Menu  Height="25" VerticalAlignment="Top">
-            <MenuItem Header="Files">
-                <MenuItem Header="Changes Attributes" ></MenuItem>
-                <MenuItem Header="Pack..." ></MenuItem>
-                <MenuItem Header="Unpack Specific Files..."></MenuItem>
-                <MenuItem Header="Test Archive(s)" ></MenuItem>
-                <MenuItem Header="Compare By Content..." ></MenuItem>
-                <MenuItem Header="Associate With..." ></MenuItem>
-                <MenuItem Header="Internal Associations..." ></MenuItem>
-                <MenuItem Header="Properties..." ></MenuItem>
-                <MenuItem Header="Calculate Occupied Space..." ></MenuItem>
-                <MenuItem Header="Multi-Reaname Tool..." ></MenuItem>
-                <MenuItem Header="Edit Comment..." ></MenuItem>
-                <MenuItem Header="Print" >
-                    <MenuItem Header="File list..."/>
-                    <MenuItem Header="File list with subdirs..."/>
-                    <MenuItem Header="File contents..."/>
+        <StackPanel>
+            <Menu  Height="20" VerticalAlignment="Top">
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <DockPanel HorizontalAlignment="Stretch"/>
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+                <MenuItem Header="Files">
+                    <MenuItem Header="Changes Attributes" ></MenuItem>
+                    <MenuItem Header="Pack..." ></MenuItem>
+                    <MenuItem Header="Unpack Specific Files..."></MenuItem>
+                    <MenuItem Header="Test Archive(s)" ></MenuItem>
+                    <MenuItem Header="Compare By Content..." ></MenuItem>
+                    <MenuItem Header="Associate With..." ></MenuItem>
+                    <MenuItem Header="Internal Associations..." ></MenuItem>
+                    <MenuItem Header="Properties..." ></MenuItem>
+                    <MenuItem Header="Calculate Occupied Space..." ></MenuItem>
+                    <MenuItem Header="Multi-Reaname Tool..." ></MenuItem>
+                    <MenuItem Header="Edit Comment..." ></MenuItem>
+                    <MenuItem Header="Print" >
+                        <MenuItem Header="File list..."/>
+                        <MenuItem Header="File list with subdirs..."/>
+                        <MenuItem Header="File contents..."/>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Split File..." ></MenuItem>
+                    <MenuItem Header="Combine Files..." ></MenuItem>
+                    <MenuItem Header="Encode File (MIME,UUE,XXE)..."></MenuItem>
+                    <MenuItem Header="Encode File (MIME,UUE,XXE,BinHEX)..."></MenuItem>
+                    <MenuItem Header="Create Checksum File(s) (CRC32,MD5,SHA1)..."></MenuItem>
+                    <MenuItem Header="Verify Checksums (from checksum files)"></MenuItem>
+                    <Separator />
+                    <MenuItem Header="Quit"></MenuItem>
                 </MenuItem>
+                <MenuItem Header="Mark" ></MenuItem>
+                <MenuItem Header="Commands" ></MenuItem>
+                <MenuItem Header="Net" ></MenuItem>
+                <MenuItem Header="Show" ></MenuItem>
+                <MenuItem Header="Configuration" ></MenuItem>
+                <MenuItem Header="Start" ></MenuItem>
+                <MenuItem Header="Help" HorizontalAlignment="Right"></MenuItem>
+            </Menu>
+            <ToolBar Height="25" VerticalAlignment="Top">
+                <ToggleButton>
+                    <Image Source="icon0.gif" />
+                </ToggleButton>
                 <Separator />
-                <MenuItem Header="Split File..." ></MenuItem>
-                <MenuItem Header="Combine Files..." ></MenuItem>
-                <MenuItem Header="Encode File (MIME,UUE,XXE)..."></MenuItem>
-                <MenuItem Header="Encode File (MIME,UUE,XXE,BinHEX)..."></MenuItem>
-                <MenuItem Header="Create Checksum File(s) (CRC32,MD5,SHA1)..."></MenuItem>
-                <MenuItem Header="Verify Checksums (from checksum files)"></MenuItem>
+                <Button>
+                    <Image Source="icon1.gif" />
+                </Button>
                 <Separator />
-                <MenuItem Header="Quit"></MenuItem>
-            </MenuItem>
-            <MenuItem Header="Mark" ></MenuItem>
-            <MenuItem Header="Commands" ></MenuItem>
-            <MenuItem Header="Net" ></MenuItem>
-            <MenuItem Header="Show" ></MenuItem>
-            <MenuItem Header="Configuration" ></MenuItem>
-            <MenuItem Header="Start" ></MenuItem>
-        </Menu>
+                <Button>
+                    <Image Source="icon2.png" />
+                </Button>
+                <Separator />
+                <Button>
+                    <Image Source="icon3.png" />
+                </Button>
+                <TextBox Foreground="LightGray" Width="100">Поиск...</TextBox>
+            </ToolBar>
+        </StackPanel>
+        <UniformGrid Grid.Row="3" Rows="1" HorizontalAlignment="Stretch">
+            <Button Content="F1"/>
+                <Button Content="F2"/>
+                <Button Content="F3"/>
+            <Button Content="F4"/>
+        </UniformGrid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
