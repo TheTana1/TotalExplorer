@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotalExplorer", "TotalExplorer.csproj", "{E2FE23D7-1AAA-4C27-AC87-F18E5228F82D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Icons", "..\Icons\Icons.csproj", "{619D421E-2E22-4F2A-B93F-273AB272D41F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E2FE23D7-1AAA-4C27-AC87-F18E5228F82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2FE23D7-1AAA-4C27-AC87-F18E5228F82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2FE23D7-1AAA-4C27-AC87-F18E5228F82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619D421E-2E22-4F2A-B93F-273AB272D41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619D421E-2E22-4F2A-B93F-273AB272D41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619D421E-2E22-4F2A-B93F-273AB272D41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619D421E-2E22-4F2A-B93F-273AB272D41F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
